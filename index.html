@@ -14,20 +14,90 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid bg-dark bg-gradient">
         <nav class="row">
-            <col-12 class="col-12 col-md-6 col-lg-6">
-                <img src="img/logo.png" class="img-fluid" width="100" alt="anillo unico">
-            </col-12>
-            <div class="col col-md col-lg">
+            <div class="col-12 col-md-3 col-lg-3">
+                <img src="img/logo.png" class="img-fluid" width="110" alt="anillo unico">
+            </div>
+            <div class="col col-md col-lg pt-4 text-light">
                 <h1>Uno para dominarlos a todos</h1>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid bg-secondary bg-gradient">
+        <div class="row pt-4">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-header bg-dark bg-gradient text-center text-light">
+                        <span>Ingresar Guerrero</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="nombre-txt" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre-txt">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo-select" class="form-label">Tipo</label>
+                            <select id="tipo-select" class="form-select">
+                                <option value="orco">Orco</option>
+                                <option value="uruk">Uruk</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nivel-nro" class="form-label">Nivel</label>
+                            <input type="number" class="form-control" id="nivel-nro">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rango-select" class="form-label">Rango</label>
+                            <select id="rango-select" class="form-select">
+                                <option value="guerrero">Guerrero</option>
+                                <option value="capitan">Capitán</option>
+                                <option value="caudillo">Caudillo</option>
+                                <option value="manosauron">Mano de Sauron</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-dark bg-gradient">
+                        <div class="mb-6 text-end">
+                            <button type="button" class="btn btn-success" id="registrar-btn">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md">
+                <div class="card">
+                    <div class="card-header bg-dark bg-gradient text-light">
+                        <span>Mostrar Guerreros</span>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th>Nivel</th>
+                                    <th>Rango</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-tbody">
 
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer bg-dark bg-gradient">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
